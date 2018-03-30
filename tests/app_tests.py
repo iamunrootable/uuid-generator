@@ -8,6 +8,7 @@ import app
 # adding a test comment
 # another test
 # another test comment
+# another test comment
 class AppTestCase(unittest.TestCase):
 
     def setUp(self):
