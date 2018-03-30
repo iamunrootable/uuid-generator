@@ -6,6 +6,7 @@ import app
 # Helper
 
 # adding a test comment
+# another test
 # another test comment
 class AppTestCase(unittest.TestCase):
 
