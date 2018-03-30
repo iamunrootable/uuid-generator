@@ -6,7 +6,7 @@ import app
 # Helper
 
 def bytes_to_str(b):
-    return b
+    return ''.join(chr(x) for x in (b))
 
 class AppTestCase(unittest.TestCase):
 
@@ -16,4 +16,5 @@ class AppTestCase(unittest.TestCase):
 
     def test_brigade_ci_meetup(self):
         resp = self.client.get('/')
-        assert uuid.UUID(bytes_to_str(resp.data))
+	assert uuid.UUID(resp.data)
+        #assert True
